@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bigodes DF | Moda Masculina & Streetwear</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Barra de Aviso Superior -->
+  <div class="top-bar">
+    🚚 Frete grátis para todo o DF em compras acima de R$ 299,90 | Parcelamento em até 12x
+  </div>
+
+  <!-- Cabeçalho / Navegação -->
+  <header class="header">
+    <div class="container header-content">
+      <a href="#" class="logo">BIGODES <span>DF</span></a>
+
+      <nav class="nav-menu">
+        <button class="nav-btn active" data-category="todos">Início</button>
+        <button class="nav-btn" data-category="camisetas">Camisetas / Polos</button>
+        <button class="nav-btn" data-category="shorts">Shorts / Bermudas</button>
+        <button class="nav-btn" data-category="jaquetas">Jaquetas / Moletons</button>
+        <button class="nav-btn" data-category="calcas">Calças</button>
+        <button class="nav-btn" data-category="calcados">Tênis / Slides</button>
+      </nav>
+
+      <div class="header-actions">
+        <input type="text" id="search-input" placeholder="Buscar peça ou marca...">
+        <button id="cart-toggle" class="cart-btn">
+          🛒 <span id="cart-count">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Banner Principal (Hero) -->
+  <section class="hero">
+    <div class="container hero-content">
+      <span class="badge">COLEÇÃO 2026</span>
+      <h1>Estilo original direto de Brasília para você.</h1>
+      <p>As melhores marcas do streetwear e casual reunidas em um só lugar: Lacoste, Nike e muito mais.</p>
+      <a href="#catalogo" class="btn-primary">Ver Coleção</a>
+    </div>
+  </section>
+
+  <!-- Seção de Benefícios -->
+  <section class="benefits">
+    <div class="container benefits-grid">
+      <div class="benefit-item">
+        <strong>💳 Até 12x no Cartão</strong>
+        <span>Parcele suas compras com facilidade</span>
+      </div>
+      <div class="benefit-item">
+        <strong>⚡ Entrega Rápida DF</strong>
+        <span>Receba no mesmo dia em Brasília e entorno</span>
+      </div>
+      <div class="benefit-item">
+        <strong>✅ 100% Originais</strong>
+        <span>Produtos selecionados com garantia</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção do Catálogo de Produtos -->
+  <main id="catalogo" class="container catalog-section">
+    <div class="section-header">
+      <h2 id="category-title">Destaques da Loja</h2>
+      <span id="product-count">10 produtos encontrados</span>
+    </div>
+
+    <div id="products-grid" class="products-grid">
+      <!-- Os produtos são carregados automaticamente pelo script.js -->
+    </div>
+  </main>
+
+  <!-- Seção Sobre a Loja -->
+  <section class="about-section">
+    <div class="container about-content">
+      <h2>Sobre a Bigodes DF</h2>
+      <p>Nascida no Distrito Federal, a <strong>Bigodes DF</strong> traz o que há de melhor na moda masculina contemporânea. Trabalhamos com peças exclusivas das principais marcas globais para garantir conforto, presença e autenticidade no seu dia a dia.</p>
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>BIGODES <span>DF</span></h3>
+        <p>Brasília - Distrito Federal</p>
+        <p>Atendimento de Seg a Sáb, das 09h às 19h.</p>
+      </div>
+      <div>
+        <h4>Categorias</h4>
+        <ul>
+          <li>Camisetas & Polos</li>
+          <li>Shorts & Bermudas</li>
+          <li>Jaquetas & Moletons</li>
+          <li>Calças & Tênis</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Formas de Pagamento</h4>
+        <p>PIX (5% OFF), Cartão de Crédito em até 12x e Boleto.</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2026 Bigodes DF. Todos os direitos reservados.
+    </div>
+  </footer>
+
+  <!-- Carrinho Lateral (Drawer) -->
+  <div id="cart-overlay" class="cart-overlay"></div>
+  <aside id="cart-drawer" class="cart-drawer">
+    <div class="cart-header">
+      <h3>Sua Sacola</h3>
+      <button id="close-cart" class="close-btn">&times;</button>
+    </div>
+    <div id="cart-items" class="cart-items">
+      <p class="empty-msg">Sua sacola está vazia.</p>
+    </div>
+    <div class="cart-footer">
+      <div class="cart-total">
+        <span>Total:</span>
+        <strong id="cart-total-price">R$ 0,00</strong>
+      </div>
+      <button id="checkout-btn" class="btn-whatsapp">Finalizar Pedido no WhatsApp</button>
+    </div>
+  </aside>
+
+  <!-- Botão Flutuante do WhatsApp -->
+  <a href="https://wa.me/5561999999999?text=Olá!%20Vim%20pelo%20site%20da%20Bigodes%20DF." target="_blank" class="whatsapp-float" title="Fale conosco no WhatsApp">
+    💬
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
